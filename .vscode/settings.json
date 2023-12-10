@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};C:\\Users\\${env:UserName}\\BuildTools\\Windows\\CEdev\\bin;"
+    }, 
+    "terminal.integrated.env.linux": {
+        "PATH": "${env:PATH}:${env:HOME}/BuildTools/Linux/CEdev"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "configurations": [
+        {
+            "name": "NuMicro Cortex-M4",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-clang-arm",
+            "compilerPath": "${env:UserProfile}\\BuildTools\\Windows\\CEdev\\bin\\ez80-clang.exe",
+            "mergeConfigurations": false,
+            "browse": {
+                "path": [
+                    "${workspaceFolder}/**"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            }
+        }
+    ],
+    "version": 4
+}

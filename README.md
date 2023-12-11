@@ -10,5 +10,5 @@ CE Programming](https://github.com/CE-Programming/toolchain/releases/tag/v11.2),
 ### Build the example
 - Open folder from VSCode
 - Open a terminal inside the VSCode
-- `cd` to the project directory which contain a makefile
+- `cd` to the project directory
 - `make`

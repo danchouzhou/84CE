@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "NuMicro Cortex-M4",
+            "name": "CEdev",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${env:UserProfile}/BuildTools/Windows/CEdev/**"

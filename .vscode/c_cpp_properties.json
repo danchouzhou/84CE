@@ -3,7 +3,8 @@
         {
             "name": "NuMicro Cortex-M4",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "${env:UserProfile}/BuildTools/Windows/CEdev/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -17,7 +18,8 @@
             "mergeConfigurations": false,
             "browse": {
                 "path": [
-                    "${workspaceFolder}/**"
+                    "${workspaceFolder}/**",
+                    "${env:UserProfile}/BuildTools/Windows/CEdev/**"
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }

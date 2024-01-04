@@ -2,10 +2,11 @@
 # Makefile Options
 # ----------------------------
 
-NAME = DEMO
+NAME = PNGVIEW
 ICON = icon.png
-DESCRIPTION = "CE C Toolchain Demo"
+DESCRIPTION = "View PNG from USB disk"
 COMPRESSED = NO
+ARCHIVED = NO
 
 CFLAGS = -Wall -Wextra -Oz
 CXXFLAGS = -Wall -Wextra -Oz

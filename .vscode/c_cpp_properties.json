@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "CEdev",
+            "name": "CE Programming",
             "includePath": [
                 "${workspaceFolder}/**",
                 "${env:UserProfile}/BuildTools/Windows/CEdev/**"

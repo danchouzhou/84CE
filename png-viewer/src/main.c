@@ -207,33 +207,33 @@ int main(void)
     filebuffer = malloc(size);
     fat_ReadFile(&file, block, filebuffer);
 
-	upng = upng_new_from_bytes(filebuffer, fat_GetFileSize(&file));
-	if (upng_get_error(upng) != UPNG_EOK) {
-		sprintf(buffer, "error: %u %u", upng_get_error(upng), upng_get_error_line(upng));
-		putstr(buffer);
+    upng = upng_new_from_bytes(filebuffer, fat_GetFileSize(&file));
+    if (upng_get_error(upng) != UPNG_EOK) {
+        sprintf(buffer, "error: %u %u", upng_get_error(upng), upng_get_error_line(upng));
+        putstr(buffer);
         while (!os_GetCSC());
         goto fat_error;
-	}
+    }
 
     putstr("Press any key to decode.");
     while (!os_GetCSC());
 
-	upng_decode(upng);
-	if (upng_get_error(upng) != UPNG_EOK) {
-		sprintf(buffer, "error: %u %u", upng_get_error(upng), upng_get_error_line(upng));
-		putstr(buffer);
+    upng_decode(upng);
+    if (upng_get_error(upng) != UPNG_EOK) {
+        sprintf(buffer, "error: %u %u", upng_get_error(upng), upng_get_error_line(upng));
+        putstr(buffer);
         while (!os_GetCSC());
         goto fat_error;
-	}
-	width = upng_get_width(upng);
-	height = upng_get_height(upng);
-	depth = upng_get_bpp(upng) / 8;
+    }
+    width = upng_get_width(upng);
+    height = upng_get_height(upng);
+    depth = upng_get_bpp(upng) / 8;
 
-	sprintf(buffer, "size: %ux%ux%u (%u)", width, height, upng_get_bpp(upng), upng_get_size(upng));
+    sprintf(buffer, "size: %ux%ux%u (%u)", width, height, upng_get_bpp(upng), upng_get_size(upng));
     putstr(buffer);
-	sprintf(buffer, "depth: %u", depth);
+    sprintf(buffer, "depth: %u", depth);
     putstr(buffer);
-	sprintf(buffer, "format: %u", upng_get_format(upng));
+    sprintf(buffer, "format: %u", upng_get_format(upng));
     putstr(buffer);
 
     putstr("Press any key to show.");

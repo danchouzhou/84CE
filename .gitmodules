@@ -1,0 +1,3 @@
+[submodule "png-viewer/upng"]
+	path = png-viewer/upng
+	url = https://github.com/elanthis/upng.git
